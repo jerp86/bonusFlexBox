@@ -1,4 +1,21 @@
+html,
+body,
 #app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  /**
+   * para trabalhar com FlexBox, em primeiro lugar, é necessário utilizar o "diplay: 'flex'"
+   * no elemento que engloba os elementos trabalhados
+   */
+  display: flex;
+  /**
+   * por padrão, a direção/alinhamento é por linha, e podemos utilizar as opções:
+   * row, column, row-reverse ou column-reverse
+   */
+  flex-direction: column;
 }
 
 .box {
