@@ -15,20 +15,22 @@ body,
    * por padrão, a direção/alinhamento é por linha, e podemos utilizar as opções:
    * row, column, row-reverse ou column-reverse
    * flex-direction: row;
-   */
-
-  /**
+   *
    * quando se trabalha com o padrão row, o 'align-items' controla o alinhamento verticalmente
    * e o justify-content o alinhamento horizontalmente
    * Opções do align-items: flex-start, center, flex-end
    * Opções do justify-content: flex-start, center, flex-end, space-between, space-around e 
-   * align-items: center;
-   * justify-content: space-evenly;
+   *
+   * flex-wrap realiza a quebra de linha nos elementos
+   * align-content é responsável pelo alinhamento dos elementos em quebra de linha,
+   * utiliza os mesmos valores do justify-content
    */
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .box {
-  width: 100px;
+  width: 200px;
   height: 60px;
   background: #f00;
   margin: 5px;
@@ -41,6 +43,6 @@ body,
    *
    * flex é a junção do flex-grow e flex-shrink. Caso tenha o valor 1, ele irá aumentar
    * e diminuir para ocupar o melhor espaço em tela
+   * flex: 1;
    */
-  flex: 1;
 }
