@@ -15,7 +15,16 @@ body,
    * por padrão, a direção/alinhamento é por linha, e podemos utilizar as opções:
    * row, column, row-reverse ou column-reverse
    */
-  flex-direction: column;
+  flex-direction: row;
+
+  /**
+   * quando se trabalha com o padrão row, o 'align-items' controla o alinhamento verticalmente
+   * e o justify-content o alinhamento horizontalmente
+   * Opções do align-items: flex-start, center, flex-end
+   * Opções do justify-content: flex-start, center, flex-end, space-between, space-around e 
+   */
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .box {
