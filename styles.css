@@ -25,12 +25,10 @@ body,
    * align-content é responsável pelo alinhamento dos elementos em quebra de linha,
    * utiliza os mesmos valores do justify-content
    */
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 .box {
-  width: 200px;
+  width: 150px;
   height: 60px;
   background: #f00;
   margin: 5px;
@@ -45,4 +43,18 @@ body,
    * e diminuir para ocupar o melhor espaço em tela
    * flex: 1;
    */
+}
+
+.red {
+  order: 1;
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 3;
 }
